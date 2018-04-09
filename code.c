@@ -67,10 +67,16 @@ int partition(int* arr, int low, int high, int* lp)
 // Driver code
 int main()
 {
-    int arr[] = { 24, 8, 42, 75, 29, 77, 38, 57 };
-    DualPivotQuickSort(arr, 0, 7);
+    int y,n;
+    scanf("%d",&n);
+    int arr[n];
+    for (y=0;y<n;y++)
+    {
+    	scanf("%d",&arr[y]);
+    }
+    DualPivotQuickSort(arr, 0, n);
     printf("Sorted array: ");
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < n; i++)
         printf("%d ", arr[i]);
     printf("\n");
     return 0;
